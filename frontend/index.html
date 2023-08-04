@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shayari</title>
+    <style>
+ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f7f7f7;
+}
+
+/* Styling for the app header */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #333333;
+}
+
+/* Styling for the input field and button */
+#word {
+    padding: 0.5rem;
+    width: 80%;
+    max-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+#generateBtn {
+    padding: 0.5rem 1rem;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#generateBtn:hover {
+    background-color: #b34200;
+}
+
+
+#Output {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    color: white;
+    padding: 10px;
+}
+#container {
+    margin: auto;
+    width: 45%;
+    background-color:green;
+ 
+    text-align: center;
+    margin-top: 10%;
+}
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1 style="color: white;"> Generate Shayari</h1>
+        <input type="text" id="word" placeholder="Enter a word">
+        <button id="generateBtn">Generate</button>
+        <div id="Output"></div>
+
+    </div>
+  
+
+    <script src="index.js"></script>
+</body>
+</html>
